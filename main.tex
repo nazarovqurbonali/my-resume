@@ -1,0 +1,152 @@
+% !TeX spellcheck = en_GB
+% !TeX program = pdflatex
+%
+% LuxSleek-CV 1.1 LaTeX template
+% Modified for Qurbonali Nazarov
+%
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[british]{babel}
+\usepackage[left = 0mm, right = 0mm, top = 0mm, bottom = 0mm]{geometry}
+\usepackage[stretch = 25, shrink = 25, tracking=true, letterspace=30]{microtype}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{marvosym}
+
+\usepackage{enumitem}
+\setlist{parsep = 0pt, topsep = 0pt, partopsep = 1pt, itemsep = 1pt, leftmargin = 6mm}
+
+\usepackage{FiraSans}
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{cvblue}{HTML}{304263}
+
+%%%%%%% USER COMMAND DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\dates}[1]{\hfill\mbox{\textbf{#1}}}
+\newcommand{\is}{\par\vskip.5ex plus .4ex}
+\newcommand{\smaller}[1]{{\small$\diamond$\ #1}}
+\newcommand{\headleft}[1]{\vspace*{3ex}\textsc{\textbf{#1}}\par%
+    \vspace*{-1.5ex}\hrulefill\par\vspace*{0.7ex}}
+\newcommand{\headright}[1]{\vspace*{2.5ex}\textsc{\Large\color{cvblue}#1}\par%
+     \vspace*{-2ex}{\color{cvblue}\hrulefill}\par}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[colorlinks = true, urlcolor = white, linkcolor = white]{hyperref}
+
+\begin{document}
+
+% Style definitions
+\setlength{\topskip}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\fboxsep}{0pt}
+\pagestyle{empty}
+\raggedbottom
+
+\begin{minipage}[t]{0.33\textwidth}
+\colorbox{cvblue}{\begin{minipage}[t][5mm][t]{\textwidth}\null\hfill\null\end{minipage}}
+
+\vspace{-.2ex}
+\colorbox{cvblue!90}{\color{white}
+\kern0.09\textwidth\relax
+\begin{minipage}[t][293mm][t]{0.82\textwidth}
+\raggedright
+\vspace*{2.5ex}
+
+\Large Qurbonali \textbf{\textsc{Nazarov}} \normalsize
+
+% Placeholder for profile picture
+\null\hfill\includegraphics[width=1\textwidth]{IMG_20250719_123707.jpg}\hfill\null
+
+\vspace*{0.5ex}
+
+\headleft{Profile}
+Software engineer with over 2 years of experience in backend development, specializing in .NET Core, ASP.NET Core, and Web3 technologies. Skilled in building RESTful APIs, microservices, and blockchain integrations. Focused on scalable, secure systems and learning decentralized technologies.
+
+\headleft{Contact details}
+\small
+\MVAt\ {\small nazarovqurbonali4@gmail.com} \\[0.4ex]
+\Mobilefone\ +992\,007\,99\,27\,57 \\[0.5ex]
+\Mundus\ \href{https://linkedin.com/in/qurbonali-nazarov-8837b2310}{linkedin.com/in/qurbonali} \\[0.1ex]
+\Mundus\ \href{https://github.com/nazarovqurbonali}{github.com/nazarovqurbonali} \\[0.1ex]
+\Letter\ Tajikistan, Dushanbe
+\normalsize
+
+\headleft{Personal information}
+Date of birth: \textbf{20 January 2005} \\[0.5ex]
+Citizenship: \textbf{Tajikistan} \\[0.5ex]
+Family: \textbf{Single without children} \\[0.5ex]
+Languages: \textbf{Tajik}~(C2), \textbf{Uzbek}~(C2), \textbf{Russian}~(B2), \textbf{English}~(B1)
+
+\headleft{Skills}
+\begin{itemize}
+\item .NET, C\#, ASP.NET Core
+\item Web3, Blockchain, Smart Contracts
+\item SQL, PostgreSQL, MongoDB
+\item Docker, Redis, Microservices
+\item Software Architecture, Clean Code
+\end{itemize}
+
+\end{minipage}
+\kern0.09\textwidth\relax
+}
+\end{minipage}
+\hskip2.5em
+\begin{minipage}[t]{0.56\textwidth}
+\setlength{\parskip}{0.8ex}
+
+\vspace{2ex}
+\headright{Experience}
+
+\textbf{Freelance Backend Developer} \hfill \textit{Aug 2024 -- Present} \\
+Self-employed, Dushanbe (Hybrid) \\
+\begin{itemize}
+  \item Developed multiple backend systems in .NET, focusing on Web3 and decentralized apps.
+  \item \textbf{OASIS:} Integrated .NET with Holochain via HoloNET. Added features, smart contracts, and blockchain-based profile storage.
+  \item \textbf{Quantum Street Bridge:} Built asset bridge between Solana and Radix. Added NFT minting and wallet logic. \href{https://qstreetrwa.com}{qstreetrwa.com}
+  \item \textbf{Video CMS:} Created a system for video uploading and streaming using .NET Core and Angular with RBAC and moderation tools.
+\end{itemize}
+
+\vspace{1em}
+\textbf{Mentor — Softclub Academy} \hfill \textit{Nov 2023 -- Dec 2024} \\
+\begin{itemize}
+  \item Mentored 3 .NET groups (30+ students) in C\#, ASP.NET Core, EF, SQL, SOLID, and DI.
+  \item Focused on hands-on, job-ready skills through real-world projects.
+\end{itemize}
+
+\vspace{1em}
+\textbf{Backend Developer — RioTech} \hfill \textit{Nov 2023 -- Aug 2024} \\
+\begin{itemize}
+  \item \textbf{Hitticket:} Developed microservices system with .NET, PostgreSQL, Redis, MediatR, and CQRS. Implemented auth, rate limiting, RBAC.
+  \item \textbf{CRM:} Built monolithic internal system using Clean Architecture and EF Core.
+\end{itemize}
+
+\headright{Education}
+
+\textsc{Bachelor's in Computer and Information Systems Security} at \textit{Tajik Technical University} \dates{2022--2026} \\
+
+\smaller{Studying information security, discrete mathematics, probability theory, and cryptography. Developing secure backend systems with C\#.}
+
+\is
+\textsc{Software Development Course} at \textit{Softclub Academy} \dates{Apr 2023--Sep 2023} \\
+\smaller{Completed intensive training in .NET Core, ASP.NET Core, and C\#, focusing on RESTful APIs, PostgreSQL, and microservices. Achieved a grade of 94.}
+
+\headright{Additional skills}
+\begin{itemize}
+\item Cloud: AWS, Azure DevOps, Hetzner, S3
+\item DevOps: GitHub, GitLab, Nginx, Docker
+\item Languages: Solidity, Rust, Bash, C++
+\item Frameworks: Entity Framework Core, Dapper ORM, MediatR
+\item Other: gRPC, RabbitMQ, Quartz Scheduler, Cryptography
+\end{itemize}
+
+\headright{Hobbies}
+\textit{Technology:} Exploring Web3 and decentralized systems. \\
+\textit{Programming:} Contributing to open-source projects on GitHub. \\
+\textit{Learning:} Studying advanced algorithms and blockchain technologies.
+
+\end{minipage}
+
+\end{document}
